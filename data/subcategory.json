@@ -1,0 +1,291 @@
+[
+  { "category": { "$oid": "65553b362f13c73ddf78387a" }, "name": "Ecommerce" },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387a" },
+    "name": "Rental Vehicles"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387b" },
+    "name": "Crypto Profit"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387c" },
+    "name": "Account Balance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387c" },
+    "name": "Gift"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387c" },
+    "name": "Bonus"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387c" },
+    "name": "Receivable"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387f" },
+    "name": "Bank Loan"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387f" },
+    "name": "Car Loan"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78387f" },
+    "name": "House Loan"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783880" },
+    "name": "Courses"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783880" },
+    "name": "Tuition"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783880" },
+    "name": "Suubscription"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783880" },
+    "name": "Seminars"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783880" },
+    "name": "Books"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783881" },
+    "name": "Household items"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783881" },
+    "name": "Detergents"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783881" },
+    "name": "Toiletries"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783882" },
+    "name": "Groceries"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783883" },
+    "name": "Vitamins"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783883" },
+    "name": "Dental care"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783883" },
+    "name": "Medications"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783883" },
+    "name": "Medical Devices"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783883" },
+    "name": "Medical Services"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783883" },
+    "name": "Membership"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783884" },
+    "name": "House Rent"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783884" },
+    "name": "House Maintenance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783884" },
+    "name": "House Repair"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783884" },
+    "name": "Furnishing"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783884" },
+    "name": "Property taxes"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783885" },
+    "name": "School supplies"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783885" },
+    "name": "Toys"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783885" },
+    "name": "Allowance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783885" },
+    "name": "Kid's Clothing"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783886" },
+    "name": "Taxes/Fees"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783886" },
+    "name": "Gifts"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783886" },
+    "name": "Services"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783886" },
+    "name": "Software Subscription"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783887" },
+    "name": "Gas/Diesel"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783887" },
+    "name": "Car Maintenance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783887" },
+    "name": "Car Repair"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783887" },
+    "name": "Registration & fees"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783887" },
+    "name": "Ticket"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783887" },
+    "name": "Fare"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783888" },
+    "name": "Water Bill"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783888" },
+    "name": "Electrical Bill"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783888" },
+    "name": "Internet Bill"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783888" },
+    "name": "Phone Bill"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783888" },
+    "name": "Garbage Bill"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf783888" },
+    "name": "Cable Bill"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388a" },
+    "name": "Vacation"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388a" },
+    "name": "Cinema"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388a" },
+    "name": "Resort"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388a" },
+    "name": "Hobbies"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388a" },
+    "name": "Netflix Subscription"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388b" },
+    "name": "Gadgets"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388b" },
+    "name": "Adult's Clothing"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388b" },
+    "name": "Furnitures"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388b" },
+    "name": "Home Décor"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388b" },
+    "name": "Appliances"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388b" },
+    "name": "Eating Out"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388c" },
+    "name": "Donations"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388c" },
+    "name": "Charity"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388c" },
+    "name": "Gift"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388d" },
+    "name": "Health Insurance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388d" },
+    "name": "Car Insurance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388d" },
+    "name": "Life Insurance"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388d" },
+    "name": "Emergency Fund"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388d" },
+    "name": "Personal Savings"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388e" },
+    "name": "Tools"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388e" },
+    "name": "Equipment"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388e" },
+    "name": "Lot Installment"
+  },
+  {
+    "category": { "$oid": "65553b362f13c73ddf78388e" },
+    "name": "Binance"
+  }
+]

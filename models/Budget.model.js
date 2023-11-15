@@ -7,12 +7,6 @@ const budgetSchema = new Schema({
     ref: "Year",
   },
   month: String,
-  type: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Type",
-    },
-  ],
   amount: Number,
   description: String,
 });

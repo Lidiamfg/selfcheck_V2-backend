@@ -7,10 +7,6 @@ const expenseSchema = new Schema({
     ref: "Year",
   },
   month: String,
-  category: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Category",
-  },
   date: { type: Date, default: Date.now },
   amount: Number,
   description: String,

@@ -1,0 +1,117 @@
+[
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783878" },
+    "typeIE": { "$oid": "655537f12f13c73ddf78386c" },
+    "name": "Salary"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783879" },
+    "typeIE": { "$oid": "655537f12f13c73ddf78386c" },
+    "name": "Freelance"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78387a" },
+    "typeIE": { "$oid": "655537f12f13c73ddf78386d" },
+    "name": "Business"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78387b" },
+    "typeIE": { "$oid": "655537f12f13c73ddf78386e" },
+    "name": "Investments"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78387c" },
+    "typeIE": { "$oid": "655537f12f13c73ddf78386f" },
+    "name": "Other_Income"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78387d" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783870" },
+    "name": "Account_Payable"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78387e" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783870" },
+    "name": "Lend_Money"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78387f" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783870" },
+    "name": "Loan_Payable"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783880" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Education"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783881" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Essencials"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783882" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Food"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783883" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Healthcare"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783884" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Housing"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783885" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Kids"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783886" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Miscellaneous"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783887" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Transportation"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783888" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Utilities"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf783889" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Other"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78388a" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783872" },
+    "name": "Entertainment"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78388b" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783872" },
+    "name": "Personal"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78388c" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783873" },
+    "name": "Give"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78388d" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783874" },
+    "name": "Insurance"
+  },
+  {
+    "_id": { "$oid": "65553b362f13c73ddf78388e" },
+    "typeIE": { "$oid": "655537f12f13c73ddf783874" },
+    "name": "Investment"
+  }
+]

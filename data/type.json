@@ -1,8 +1,47 @@
 [
   {
-    "user": {
-      "$oid": "6554b80ff7c14632379b2474"
-    },
-    "number": 2000
+    "_id": { "$oid": "655537f12f13c73ddf78386c" },
+    "name": "Active",
+    "nominalAccount": "Income"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf78386d" },
+    "name": "Passive",
+    "nominalAccount": "Income"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf78386e" },
+    "name": "Passive/Active",
+    "nominalAccount": "Income"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf78386f" },
+    "name": "Other",
+    "nominalAccount": "Income"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf783870" },
+    "name": "Debt",
+    "nominalAccount": "Expense"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf783871" },
+    "name": "Needs",
+    "nominalAccount": "Expense"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf783872" },
+    "name": "Wants",
+    "nominalAccount": "Expense"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf783873" },
+    "name": "Give",
+    "nominalAccount": "Expense"
+  },
+  {
+    "_id": { "$oid": "655537f12f13c73ddf783874" },
+    "name": "Savings",
+    "nominalAccount": "Expense"
   }
 ]
