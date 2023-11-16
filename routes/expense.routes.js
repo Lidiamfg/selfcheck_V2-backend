@@ -7,12 +7,12 @@ const Year = require("../models/Year.model");
 //CREATE NEW EXPENSE
 router.post("/", isAuthenticated, async (req, res) => {
   try {
-    const yearId = req.body.year;
+    /* const yearId = req.body.year; */
     const expense = { ...req.body };
     const newExpense = await Expense.create(expense);
-    await Year.findByIdAndUpdate(yearId, {
+    /* await Year.findByIdAndUpdate(yearId, {
       $push: { expense: newExpense._id },
-    });
+    }); */
     res.status(201).json({ expense: newExpense });
   } catch (error) {
     console.log(error);
@@ -42,11 +42,11 @@ router.put("/:expenseId", isAuthenticated, async (req, res) => {
 router.delete("/:expenseId", isAuthenticated, async (req, res) => {
   const { expenseId } = req.params;
   try {
-    const currentExpense = await Expense.findById(expenseId);
+    /* const currentExpense = await Expense.findById(expenseId); */
     await Expense.findByIdAndDelete(expenseId);
-    await Year.findByIdAndUpdate(currentExpense.year, {
+    /* await Year.findByIdAndUpdate(currentExpense.year, {
       $pull: { expense: expenseId },
-    });
+    }); */
     res.status(200).send();
   } catch (error) {
     console.log(error);
@@ -55,14 +55,10 @@ router.delete("/:expenseId", isAuthenticated, async (req, res) => {
 });
 
 //GET ALL THE EXPENSES FOR SPECIFIC YEAR
-router.get("/:yearId", isAuthenticated, async (req, res) => {
+router.get("/year/:yearId", isAuthenticated, async (req, res) => {
   const { yearId } = req.params;
   try {
-    const yearExpenses = await Expense.find({ year: yearId }).populate({
-      path: "category",
-      model: "Category",
-      populate: { path: "subcategory", model: "Subcategory" },
-    });
+    const yearExpenses = await Expense.find({ year: yearId });
     res.json(yearExpenses);
   } catch (error) {
     res.status(400).json({ error });

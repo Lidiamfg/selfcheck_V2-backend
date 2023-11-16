@@ -2,8 +2,9 @@ const { isAuthenticated } = require("../middlewares/routeGuard.middleware");
 
 const router = require("express").Router();
 const Year = require("../models/Year.model");
-const User = require("../models/User.model");
+/* const User = require("../models/User.model"); */
 
+//CREATE A NEW YEAR WITH ITS RESPECTIVE USER ID
 router.post("/", isAuthenticated, async (req, res) => {
   try {
     /* const userId = req.body.user; */
@@ -18,28 +19,18 @@ router.post("/", isAuthenticated, async (req, res) => {
   }
 });
 
-/* //GET A SPECIFIC YEAR
+//GET A SPECIFIC YEAR
 router.get("/:yearId", isAuthenticated, async (req, res) => {
   const { yearId } = req.params;
   try {
-    const oneYear = await Year.findById(yearId)
-      .populate({
-        path: "income",
-        model: "Income",
-        populate: { path: "category", model: "Category" },
-      })
-      .populate({
-        path: "expense",
-        model: "Expense",
-        populate: { path: "category", model: "Category" },
-      })
-      .populate({ path: "budget", model: "Budget" });
+    const oneYear = await Year.findById(yearId);
     res.json(oneYear);
   } catch (error) {
     res.status(500).json({ error });
   }
 });
- */
+
+//UPDATE A SPECIFIC YEAR
 router.put("/:yearId", isAuthenticated, async (req, res) => {
   const { yearId } = req.params;
   try {
@@ -53,14 +44,15 @@ router.put("/:yearId", isAuthenticated, async (req, res) => {
   }
 });
 
+//DELETE A SPECIFIC YEAR
 router.delete("/:yearId", isAuthenticated, async (req, res) => {
   const { yearId } = req.params;
   try {
-    const currentYear = await Year.findById(yearId);
+    /*  const currentYear = await Year.findById(yearId); */
     await Year.findByIdAndDelete(yearId);
-    await User.findByIdAndUpdate(currentYear.user, {
+    /* await User.findByIdAndUpdate(currentYear.user, {
       $pull: { year: yearId },
-    });
+    }); */
     res.status(200).send();
   } catch (error) {
     console.log(error);
@@ -69,22 +61,11 @@ router.delete("/:yearId", isAuthenticated, async (req, res) => {
 });
 
 //GET ALL YEARS OF THE USER
-router.get("/:userId", isAuthenticated, async (req, res) => {
+router.get("/user/:userId", isAuthenticated, async (req, res) => {
   const { userId } = req.params;
   try {
-    const oneYear = await Year.find({ user: userId })
-      .populate({
-        path: "income",
-        model: "Income",
-        populate: { path: "category", model: "Category" },
-      })
-      .populate({
-        path: "expense",
-        model: "Expense",
-        populate: { path: "category", model: "Category" },
-      })
-      .populate({ path: "budget", model: "Budget" });
-    res.json(oneYear);
+    const years = await Year.find({ user: userId });
+    res.json(years);
   } catch (error) {
     console.log(error);
     res.status(400).json({ error });

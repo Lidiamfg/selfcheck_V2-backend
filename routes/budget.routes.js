@@ -7,12 +7,12 @@ const Year = require("../models/Year.model");
 //CREATE NEW BUDGET
 router.post("/", isAuthenticated, async (req, res) => {
   try {
-    const yearId = req.body.year;
+    /* const yearId = req.body.year; */
     const budget = { ...req.body };
     const newBudget = await Budget.create(budget);
-    await Year.findByIdAndUpdate(yearId, {
+    /* await Year.findByIdAndUpdate(yearId, {
       $push: { budget: newBudget._id },
-    });
+    }); */
     res.status(201).json({ budget: newBudget });
   } catch (error) {
     console.log(error);
@@ -38,11 +38,11 @@ router.put("/:budgetId", isAuthenticated, async (req, res) => {
 router.delete("/:budgetId", isAuthenticated, async (req, res) => {
   const { budgetId } = req.params;
   try {
-    const currentBudget = await Budget.findById(budgetId);
+    /* const currentBudget = await Budget.findById(budgetId); */
     await Budget.findByIdAndDelete(budgetId);
-    await Year.findByIdAndUpdate(currentBudget.year, {
+    /* await Year.findByIdAndUpdate(currentBudget.year, {
       $pull: { budget: budgetId },
-    });
+    }); */
     res.status(200).send();
   } catch (error) {
     console.log(error);
@@ -51,7 +51,7 @@ router.delete("/:budgetId", isAuthenticated, async (req, res) => {
 });
 
 //GET ALL THE BUDGETS FOR SPECIFIC YEAR
-router.get("/:yearId", isAuthenticated, async (req, res) => {
+router.get("/year/:yearId", isAuthenticated, async (req, res) => {
   const { yearId } = req.params;
   try {
     const yearBudgets = await Budget.find({ year: yearId }).populate({

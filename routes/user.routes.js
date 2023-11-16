@@ -2,6 +2,7 @@ const { isAuthenticated } = require("../middlewares/routeGuard.middleware");
 const router = require("express").Router();
 const User = require("../models/User.model");
 
+//GET SPECIFIC USER
 router.get("/:userdId", isAuthenticated, async (req, res) => {
   const { userId } = req.params;
 
@@ -15,6 +16,7 @@ router.get("/:userdId", isAuthenticated, async (req, res) => {
   }
 });
 
+//DELETE SPECIFIC USER
 router.delete("/:userId", isAuthenticated, async (req, res) => {
   const { userId } = req.params;
   try {

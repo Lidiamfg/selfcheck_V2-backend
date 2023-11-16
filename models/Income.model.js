@@ -6,6 +6,14 @@ const incomeSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Year",
   },
+  category: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Category",
+  },
+  subcategory: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Subcategory",
+  },
   month: String,
   date: { type: Date, default: Date.now },
   amount: Number,
