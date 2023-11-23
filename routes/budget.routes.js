@@ -20,6 +20,19 @@ router.post("/", isAuthenticated, async (req, res) => {
   }
 });
 
+//GET ALL THE BUDGETS
+router.get("/", isAuthenticated, async (req, res) => {
+  try {
+    const budgets = await Budget.find({})
+      .populate("year")
+      .populate("category")
+      .populate("subcategory");
+    res.json(budgets);
+  } catch (error) {
+    res.status(400).json({ error });
+  }
+});
+
 // UPDATE SPECIFIC BUDGET
 router.put("/:budgetId", isAuthenticated, async (req, res) => {
   const { budgetId } = req.params;

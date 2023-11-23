@@ -20,6 +20,19 @@ router.post("/", isAuthenticated, async (req, res) => {
   }
 });
 
+//GET ALL THE INCOMES
+router.get("/", isAuthenticated, async (req, res) => {
+  try {
+    const incomes = await Income.find({})
+      .populate("year")
+      .populate("category")
+      .populate("subcategory");
+    res.json(incomes);
+  } catch (error) {
+    res.status(400).json({ error });
+  }
+});
+
 // UPDATE SPECIFIC INCOME
 router.put("/:incomeId", isAuthenticated, async (req, res) => {
   const { incomeId } = req.params;
@@ -54,7 +67,7 @@ router.delete("/:incomeId", isAuthenticated, async (req, res) => {
 router.get("/year/:yearId", isAuthenticated, async (req, res) => {
   const { yearId } = req.params;
   try {
-    const yearIncomes = await Income.find({ year: yearId });
+    const yearIncomes = await Income.find({ year: yearId }).populate("year");
     res.json(yearIncomes);
   } catch (error) {
     res.status(400).json({ error });

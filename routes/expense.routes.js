@@ -20,6 +20,19 @@ router.post("/", isAuthenticated, async (req, res) => {
   }
 });
 
+//GET ALL THE EXPENSES
+router.get("/", isAuthenticated, async (req, res) => {
+  try {
+    const expenses = await Expense.find({})
+      .populate("year")
+      .populate("category")
+      .populate("subcategory");
+    res.json(expenses);
+  } catch (error) {
+    res.status(400).json({ error });
+  }
+});
+
 // UPDATE SPECIFIC EXPENSE
 router.put("/:expenseId", isAuthenticated, async (req, res) => {
   const { expenseId } = req.params;
